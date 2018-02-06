@@ -7,8 +7,8 @@ import os
 # This program simply represents the identity function.
 #
 
-input_filename = '/Users/amineboubezari/Downloads/rankmaniac-students/data/input.txt'
-input_filename2 = '/Users/amineboubezari/Downloads/rankmaniac-students/data/input2.txt'
+input_filename = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input.txt'
+input_filename2 = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input2.txt'
 node_list = []
 node_dict = {}
 

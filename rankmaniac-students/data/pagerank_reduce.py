@@ -18,9 +18,8 @@ for line in sys.stdin:
     node_pageranks[arr[0]].append(arr[1])
     
 n = len(list(node_pageranks.keys()))
-print ('n', n)
 
 for node_id, list_values in node_pageranks.items():
-	page_rank = a*sum(list_values) + (1.-a)/n
+	page_rank = a*sum(list_values) + (1.-a)
 	sys.stdout.write(str(node_id)+'\t'+ str(page_rank)+'\n')
 
