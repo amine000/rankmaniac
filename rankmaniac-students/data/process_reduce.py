@@ -7,9 +7,9 @@ import os
 # This program simply represents the identity function.
 #
 
-input_filename = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input.txt'
-input_filename2 = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input2.txt'
-MAX_ITER = 50
+input_filename = 'input.txt'
+input_filename2 = 'input2.txt'
+MAX_ITER = 40
 node_list = []
 node_dict = {}
 node_neighbors = {}

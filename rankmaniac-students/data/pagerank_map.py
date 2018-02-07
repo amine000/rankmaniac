@@ -25,7 +25,7 @@ for line in sys.stdin:
 	# no outgoing links, so there is just 1 in the diagonal of G
 	if sink:
 		pass
-		sys.stdout.write(str(node_id)+'\t'+pageranks[0]+'\n')
+		#sys.stdout.write(str(node_id)+'\t'+pageranks[0]+'\n')
 	else:
 		# otherwise count the contribution of this node to its neighbor's pageranks
 		out_list = info_list[2:]
@@ -36,5 +36,5 @@ for line in sys.stdin:
 		for neighbor in out_list:
 			pass
 			sys.stdout.write(str(neighbor)+'\t'+str(pageranks[0]/degree)+'\n')
-			sys.stdout.write(str(node_id)+'\t'+str(0.)+'\n')
+			#sys.stdout.write(str(node_id)+'\t'+str(0.)+'\n')
 			sys.stdout.write(str(n_node_id)+'\t'+str(neighbor)+'\n')
