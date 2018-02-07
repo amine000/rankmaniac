@@ -15,7 +15,7 @@ do
 			python $pagerank_map < "temp.txt" | sort | python $pagerank_reduce | python $process_map | sort | python $process_reduce > "output.txt"
 			;;
 		*)
-			python $pagerank_map < "temp.txt" | sort | python $pagerank_reduce | python $process_map | sort | >"temp.txt"; python $process_reduce > "temp.txt"
+			python $pagerank_map < "temp.txt" | sort | python $pagerank_reduce | python $process_map | sort | >"temp.txt" && python $process_reduce > "temp.txt"
 			;;
 	esac
 done
