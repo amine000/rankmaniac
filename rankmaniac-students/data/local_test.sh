@@ -4,7 +4,7 @@ process_map="process_map.py"
 process_reduce="process_reduce.py"
 temp="temp.txt"
 #!/bin/bash
-for i in {1..50}
+for i in {1..5}
 do
     echo “iteration $i done”;
     case $i in
