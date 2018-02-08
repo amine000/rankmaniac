@@ -30,8 +30,8 @@ for line in sys.stdin:
 		out_list[-1] = out_list[-1][:-1]
 		out_list = list(map(int, out_list))
 		degree = len(out_list)
+		sys.stdout.write(str(node_id)+'\t'+str(0.)+'\n')
 
 		for neighbor in out_list:
 			sys.stdout.write(str(neighbor)+'\t'+str(pageranks[0]/degree)+'\n')
-			sys.stdout.write(str(node_id)+'\t'+str(0.)+'\n')
 			sys.stdout.write(str(n_node_id)+'\t'+str(neighbor)+'\n')

@@ -9,7 +9,7 @@ import sys
 
 #input_filename = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input.txt'
 #input_filename2 = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input2.txt'
-MAX_ITER = 4
+MAX_ITER = 35
 node_list = []
 node_dict = {}
 node_neighbors = {}
@@ -42,10 +42,12 @@ else:
 	sys.stdout.write('$'+str(int(iteration)+1)+'\n')
 	for node in node_list:
 		node_id, pr = node
-		write_string = 'NodeId:'+str(node_id)+'\t'+str(pr)+',0.0,'
-		out_list = node_neighbors[node_id]
-		for i, val in enumerate(out_list):
-			write_string += str(val)
-			if i + 1 < len(out_list):
-				write_string += ','
+		write_string = 'NodeId:'+str(node_id)+'\t'+str(pr)+',0.0'
+		if node_id in node_neighbors:
+			write_string += ','
+			out_list = node_neighbors[node_id]
+			for i, val in enumerate(out_list):
+				write_string += str(val)
+				if i + 1 < len(out_list):
+					write_string += ','
 		sys.stdout.write(write_string+'\n')
