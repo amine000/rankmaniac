@@ -9,7 +9,7 @@ import sys
 
 #input_filename = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input.txt'
 #input_filename2 = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input2.txt'
-MAX_ITER = 2
+MAX_ITER = 35
 node_list = []
 node_dict = {}
 node_neighbors = {}
