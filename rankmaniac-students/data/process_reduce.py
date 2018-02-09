@@ -14,8 +14,12 @@ MAX_ITER = 40
 =======
 #input_filename = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input.txt'
 #input_filename2 = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input2.txt'
+<<<<<<< HEAD
 MAX_ITER = 2
 >>>>>>> def05ecd72438566bf31f567995f0352e2d74885
+=======
+MAX_ITER = 35
+>>>>>>> bcf76a8b13f99b7ef7007b12f7a78280750c819f
 node_list = []
 node_dict = {}
 node_neighbors = {}
@@ -48,10 +52,12 @@ else:
 	sys.stdout.write('$'+str(int(iteration)+1)+'\n')
 	for node in node_list:
 		node_id, pr = node
-		write_string = 'NodeId:'+str(node_id)+'\t'+str(pr)+',0.0,'
-		out_list = node_neighbors[node_id]
-		for i, val in enumerate(out_list):
-			write_string += str(val)
-			if i + 1 < len(out_list):
-				write_string += ','
+		write_string = 'NodeId:'+str(node_id)+'\t'+str(pr)+',0.0'
+		if node_id in node_neighbors:
+			write_string += ','
+			out_list = node_neighbors[node_id]
+			for i, val in enumerate(out_list):
+				write_string += str(val)
+				if i + 1 < len(out_list):
+					write_string += ','
 		sys.stdout.write(write_string+'\n')

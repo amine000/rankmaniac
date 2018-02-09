@@ -1,0 +1,40 @@
+Error: java.lang.RuntimeException: PipeMapRed.waitOutputThreads(): subprocess failed with code 1
+	at org.apache.hadoop.streaming.PipeMapRed.waitOutputThreads(PipeMapRed.java:330)
+	at org.apache.hadoop.streaming.PipeMapRed.mapRedFinished(PipeMapRed.java:543)
+	at org.apache.hadoop.streaming.PipeReducer.close(PipeReducer.java:134)
+	at org.apache.hadoop.io.IOUtils.cleanup(IOUtils.java:237)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:484)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:397)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:170)
+
+Error: java.lang.RuntimeException: PipeMapRed.waitOutputThreads(): subprocess failed with code 1
+	at org.apache.hadoop.streaming.PipeMapRed.waitOutputThreads(PipeMapRed.java:330)
+	at org.apache.hadoop.streaming.PipeMapRed.mapRedFinished(PipeMapRed.java:543)
+	at org.apache.hadoop.streaming.PipeReducer.close(PipeReducer.java:134)
+	at org.apache.hadoop.io.IOUtils.cleanup(IOUtils.java:237)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:484)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:397)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:170)
+
+Error: java.lang.RuntimeException: PipeMapRed.waitOutputThreads(): subprocess failed with code 1
+	at org.apache.hadoop.streaming.PipeMapRed.waitOutputThreads(PipeMapRed.java:330)
+	at org.apache.hadoop.streaming.PipeMapRed.mapRedFinished(PipeMapRed.java:543)
+	at org.apache.hadoop.streaming.PipeReducer.close(PipeReducer.java:134)
+	at org.apache.hadoop.io.IOUtils.cleanup(IOUtils.java:237)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:484)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:397)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1548)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:170)
+
+Streaming Command Failed!
