@@ -7,23 +7,13 @@ import sys
 # This program simply represents the identity function.
 #
 
-<<<<<<< HEAD
 input_filename = 'input.txt'
 input_filename2 = 'input2.txt'
-MAX_ITER = 40
-=======
-#input_filename = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input.txt'
-#input_filename2 = '/Users/amineboubezari/rankmaniac/rankmaniac-students/data/input2.txt'
-<<<<<<< HEAD
-MAX_ITER = 2
->>>>>>> def05ecd72438566bf31f567995f0352e2d74885
-=======
-MAX_ITER = 35
->>>>>>> bcf76a8b13f99b7ef7007b12f7a78280750c819f
+MAX_ITER = 15
 node_list = []
 node_dict = {}
 node_neighbors = {}
-iteration = 0
+iteration = 0 
 
 for line in sys.stdin:
 	arr = line.split('\t')
