@@ -1,0 +1,87 @@
+2018-02-08 07:39:24,726 INFO com.amazon.ws.emr.hadoop.fs.EmrFileSystem (main): Consistency disabled, using com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem as filesystem implementation
+2018-02-08 07:39:25,333 INFO amazon.emr.metrics.MetricsSaver (main): MetricsConfigRecord disabledInCluster: false instanceEngineCycleSec: 60 clusterEngineCycleSec: 60 disableClusterEngine: false maxMemoryMb: 3072 maxInstanceCount: 500 lastModified: 1518073513930 
+2018-02-08 07:39:25,334 INFO amazon.emr.metrics.MetricsSaver (main): Created MetricsSaver j-1Q1IAD5XY8DE3:i-058594184a6b22199:RunJar:17431 period:60 /mnt/var/em/raw/i-058594184a6b22199_20180208_RunJar_17431_raw.bin
+2018-02-08 07:39:27,337 WARN org.apache.hadoop.streaming.StreamJob (main): -jobconf option is deprecated, please use -D instead.
+2018-02-08 07:39:27,337 INFO org.apache.hadoop.conf.Configuration.deprecation (main): mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2018-02-08 07:39:27,337 INFO org.apache.hadoop.conf.Configuration.deprecation (main): mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2018-02-08 07:39:28,786 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at /172.31.35.201:9022
+2018-02-08 07:39:29,698 INFO org.apache.hadoop.yarn.client.RMProxy (main): Connecting to ResourceManager at /172.31.35.201:9022
+2018-02-08 07:39:31,095 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3n://cs144students/swerve/process_map.py' for reading
+2018-02-08 07:39:31,210 INFO amazon.emr.metrics.MetricsSaver (main): Thread 1 created MetricsLockFreeSaver 1
+2018-02-08 07:39:32,949 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): Opening 's3n://cs144students/swerve/process_reduce.py' for reading
+2018-02-08 07:39:33,354 INFO com.hadoop.compression.lzo.GPLNativeCodeLoader (main): Loaded native gpl library from the embedded binaries
+2018-02-08 07:39:33,358 INFO com.hadoop.compression.lzo.LzoCodec (main): Successfully loaded & initialized native-lzo library [hadoop-lzo rev 77cfa96225d62546008ca339b7c2076a3da91578]
+2018-02-08 07:39:33,674 INFO com.amazon.ws.emr.hadoop.fs.s3n.S3NativeFileSystem (main): listStatus s3n://cs144students/swerve/10/pagerank with recursive false
+2018-02-08 07:39:34,140 INFO org.apache.hadoop.mapred.FileInputFormat (main): Total input paths to process : 1
+2018-02-08 07:39:34,234 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): number of splits:1
+2018-02-08 07:39:34,767 INFO org.apache.hadoop.mapreduce.JobSubmitter (main): Submitting tokens for job: job_1518073483318_0022
+2018-02-08 07:39:35,257 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl (main): Submitted application application_1518073483318_0022
+2018-02-08 07:39:35,341 INFO org.apache.hadoop.mapreduce.Job (main): The url to track the job: http://172.31.35.201:9046/proxy/application_1518073483318_0022/
+2018-02-08 07:39:35,344 INFO org.apache.hadoop.mapreduce.Job (main): Running job: job_1518073483318_0022
+2018-02-08 07:39:52,191 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1518073483318_0022 running in uber mode : false
+2018-02-08 07:39:52,193 INFO org.apache.hadoop.mapreduce.Job (main):  map 0% reduce 0%
+2018-02-08 07:40:19,639 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 0%
+2018-02-08 07:40:40,880 INFO org.apache.hadoop.mapreduce.Job (main):  map 100% reduce 100%
+2018-02-08 07:40:42,908 INFO org.apache.hadoop.mapreduce.Job (main): Job job_1518073483318_0022 completed successfully
+2018-02-08 07:40:43,296 INFO org.apache.hadoop.mapreduce.Job (main): Counters: 54
+	File System Counters
+		FILE: Number of bytes read=89277
+		FILE: Number of bytes written=385775
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=101
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=1
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		S3N: Number of bytes read=122414
+		S3N: Number of bytes written=124513
+		S3N: Number of read operations=0
+		S3N: Number of large read operations=0
+		S3N: Number of write operations=0
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=66558
+		Total time spent by all reduces in occupied slots (ms)=72668
+		Total time spent by all map tasks (ms)=22186
+		Total time spent by all reduce tasks (ms)=18167
+		Total vcore-seconds taken by all map tasks=22186
+		Total vcore-seconds taken by all reduce tasks=18167
+		Total megabyte-seconds taken by all map tasks=17038848
+		Total megabyte-seconds taken by all reduce tasks=18603008
+	Map-Reduce Framework
+		Map input records=2001
+		Map output records=2001
+		Map output bytes=127754
+		Map output materialized bytes=89273
+		Input split bytes=101
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=89273
+		Reduce input records=2001
+		Reduce output records=1001
+		Spilled Records=4002
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=1328
+		CPU time spent (ms)=3090
+		Physical memory (bytes) snapshot=542273536
+		Virtual memory (bytes) snapshot=2720763904
+		Total committed heap usage (bytes)=323358720
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=122414
+	File Output Format Counters 
+		Bytes Written=124513
+2018-02-08 07:40:43,296 INFO org.apache.hadoop.streaming.StreamJob (main): Output directory: s3n://cs144students/swerve/10/process/

@@ -20,7 +20,7 @@ def calculate_residuals(node_list, previous_pageranks):
 		pagerank = val[1]
 		if (val[0] in previous_pageranks):
 			prev_pr = previous_pageranks[val[0]]
-			residuals += (prev_pr - pagerank)**2
+			residuals += ((prev_pr - pagerank)**2)/len(node_list)
 
 	return residuals
 
@@ -59,6 +59,7 @@ if iteration == MAX_ITER:
 # not done, write output for next iteration
 else:
 	res = calculate_residuals(node_list, previous_pageranks)
+	RESIDUAL_THRESHOLD = 0.001/len(node_list) 
 	if (res <= RESIDUAL_THRESHOLD):
 		print_final_nodes(node_list)
 	else:
